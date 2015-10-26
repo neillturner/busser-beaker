@@ -32,8 +32,8 @@ class Busser::RunnerPlugin::Beaker < Busser::RunnerPlugin::Base
     run_bundle_install
     install_serverspec
 
-    runner = File.join(File.dirname(__FILE__), %w{.. ansiblespec runner.rb})
-    run_ruby_script!("#{runner} #{suite_path('ansiblespec').to_s}")
+    runner = File.join(File.dirname(__FILE__), %w{.. beaker runner.rb})
+    run_ruby_script!("#{runner} #{suite_path('beaker').to_s}")
   end
 
   private
