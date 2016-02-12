@@ -36,7 +36,7 @@ module_name = y[0]['module'] if y.is_a?(Array) && y[0]['module']
 module_specpath = "#{kitchen_path}/#{module_path}/#{module_name}/spec/acceptance"
 spec_prefix = '*'
 spec_prefix = y[0]['spec_prefix'] if y.is_a?(Array) && y[0]['spec_prefix']
-puts "BASE_PATH: #{base_path}, KITCHEN_PATH: #{kitchen_path}, MODULE_PATH: #{module_path}, MODULE_NAME: #{module_name}, SPEC_PREFIX: #{spec_prefix}," 
+puts "BASE_PATH: #{base_path}, KITCHEN_PATH: #{kitchen_path}, MODULE_PATH: #{module_path}, MODULE_NAME: #{module_name}, SPEC_PREFIX: #{spec_prefix}"
 
 RSpec::Core::RakeTask.new(:spec) do |t|
   candidate_bindirs = []
