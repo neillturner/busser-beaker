@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/busser-beaker.png)](http://rubygems.org/gems/busser-beaker)
 [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/busser-beaker?type=total&color=brightgreen)](https://rubygems.org/gems/busser-beaker)
+[![Build Status](https://travis-ci.org/neillturner/busser-beaker.png)](https://travis-ci.org/neillturner/busser-beaker)
 
 A Busser runner plugin for Beaker.
 
@@ -26,9 +27,11 @@ the spec_helper in the spec folder and a dummy test/integration folder.
 
 a dummy test/integration/<suite>/beaker/localhost/<suite>_spec.rb containing just a dummy comment.
 
-See example [https://github.com/neillturner/puppet_repo](https://github.com/neillturner/puppet_repo)
+See example [https://github.com/neillturner/puppet_beaker_repo](https://github.com/neillturner/puppet_beaker_repo)
 
 ```
+
+in each module:
 .
 +-- spec
 ¦   +-- acceptance
@@ -52,13 +55,40 @@ See example [https://github.com/neillturner/puppet_repo](https://github.com/neil
                     +-- default_spec.rb   # <suite>_spec.rb
 ```
 
-
 ## <a name="note"></a> Note
 
 ### <a name="spec"></a> File Matching
 
 Globbing pattern to match files is `"serverspec/*/*_spec.rb"`.
 You need to use `"_spec.rb"` (underscore), not `"-spec.rb"` (minus).
+
+
+## <a name="spec_helper"></a> spec_helper
+
+```
+require 'rubygems'
+require 'bundler/setup'
+
+require 'serverspec'
+require 'pathname'
+
+RSpec.configure do |config|
+  set :backend, :exec
+end
+```
+
+## <a name="config.yml"></a> config.yml
+
+This goes in directory test/integration/default/beaker  where default is the name of test-kitchen suite
+
+```
+---
+-
+  kitchen_path: '/tmp/kitchen'
+  module_path: 'modules'
+  module: mycompany_base
+  spec_prefix: base
+```
 
 ### <a name="serverspec1"></a> Specify ServerSpec version
 
