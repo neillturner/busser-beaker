@@ -31,18 +31,18 @@ See example [https://github.com/neillturner/puppet_repo](https://github.com/neil
 ```
 .
 +-- spec
-¦   +-- acceptance
-¦   ¦   +-- nodesets
-¦   ¦   +-- sample_test_spec.rb
-¦   ¦   +-- unsuported_spec.rb
-¦   ¦   ¦   +-- main.yml
-¦   ¦   +-- templates
-¦   ¦       +-- mariadb.repo
-¦   +-- classes
-¦   ¦   +-- sample_test_spec.rb
-¦   +-- fixtures
-¦   +-- spec_helper.rb
-¦   +-- spec_helper_acceptance.rb
+Â¦Â Â  +-- acceptance
+Â¦Â Â  Â¦Â Â  +-- nodesets
+Â¦Â Â  Â¦Â Â  +-- sample_test_spec.rb
+Â¦Â Â  Â¦Â Â  +-- unsuported_spec.rb
+Â¦Â Â  Â¦Â Â  Â¦Â Â  +-- main.yml
+Â¦Â Â  Â¦Â Â  +-- templates
+Â¦Â Â  Â¦Â Â      +-- mariadb.repo
+Â¦Â Â  +-- classes
+Â¦Â Â  Â¦Â Â  +-- sample_test_spec.rb
+Â¦Â Â  +-- fixtures
+Â¦Â Â  +-- spec_helper.rb
+Â¦Â Â  +-- spec_helper_acceptance.rb
 
 +-- test
     +-- integration
@@ -60,7 +60,7 @@ See example [https://github.com/neillturner/puppet_repo](https://github.com/neil
 Globbing pattern to match files is `"serverspec/*/*_spec.rb"`.
 You need to use `"_spec.rb"` (underscore), not `"-spec.rb"` (minus).
 
-### <a name="serverspec1"></a> Specify Beaker version
+### <a name="serverspec1"></a> Specify ServerSpec version
 
 If you have to specify serverspec version, you can use Gemfile. Example Gemfile:
 
