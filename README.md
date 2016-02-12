@@ -18,11 +18,11 @@ Please read the Busser [plugin usage][plugin_usage] page for more details.
 
 ### Directory
 
-In the ansible repository specify:
+In the puppet repository specify:
 
-the spec files with the roles.
+the spec files with the modules.
 
-the spec_helper in the spec folder and a dummy test/integration folder.
+the spec_helper in the spec folder and a there is a dummy test/integration folder.
 
 a dummy test/integration/<suite>/beaker/localhost/<suite>_spec.rb containing just a dummy comment.
 
