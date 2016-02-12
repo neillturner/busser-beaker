@@ -5,7 +5,7 @@
 
 A Busser runner plugin for Beaker.
 
-This enables testing using the beaker format. The serverspec tests are specified with the roles in the ansible repository.
+This enables testing using the beaker format. The serverspec tests are specified with the modules in the puppet repository.
 Also multple roles can be tested.
 
 See [joshbeard/puppet-module-test](https://gitlab.com/joshbeard/puppet-module-test)
