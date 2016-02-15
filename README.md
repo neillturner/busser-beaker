@@ -4,6 +4,8 @@
 [![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/busser-beaker?type=total&color=brightgreen)](https://rubygems.org/gems/busser-beaker)
 [![Build Status](https://travis-ci.org/neillturner/busser-beaker.png)](https://travis-ci.org/neillturner/busser-beaker)
 
+DEPRECATED by [neillturner/kitchen-verifier-serverspec](https://github.com/neillturner/kitchen-verifier-serverspec)
+
 A Busser runner plugin for Beaker format acceptance tests for test kitchen.
 
 This enables testing using the beaker format. The serverspec tests are specified with the modules in the puppet repository.
