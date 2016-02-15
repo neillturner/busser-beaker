@@ -1,7 +1,6 @@
 # <a name="title"></a> Busser::RunnerPlugin::Beaker
 
 [![Gem Version](https://badge.fury.io/rb/busser-beaker.png)](http://rubygems.org/gems/busser-beaker)
-[![Gem Downloads](http://ruby-gem-downloads-badge.herokuapp.com/busser-beaker?type=total&color=brightgreen)](https://rubygems.org/gems/busser-beaker)
 [![Build Status](https://travis-ci.org/neillturner/busser-beaker.png)](https://travis-ci.org/neillturner/busser-beaker)
 
 DEPRECATED by [neillturner/kitchen-verifier-serverspec](https://github.com/neillturner/kitchen-verifier-serverspec)
